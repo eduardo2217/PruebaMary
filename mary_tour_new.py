@@ -56,17 +56,7 @@ trainer.train(["mari Saluda a los invitados", #sí
     "1"])
 
 trainer.train(["mary Saluda a los invitados", #sí
-    "1"])#Bienvenido a AudacIA centro de investigación
-# Podrías saludar a los invitados, Mari
-# Qué tal si das la bienvenida a nuestros invitados, Mari
-# Mari ¿puedes decir hola a nuestros invitados
-# Podrías dar un saludo a los invitados en nombre de Mari
-# Mari ¿te importaría saludar a los invitados que llegaron
-# Serías tan amable de saludar a los invitados Mari
-# Mari podrías extenderles un cordial saludo a nuestros invitados
-# Qué tal si les das la bienvenida a los invitados Mari
-# Mari podrías saludar a quienes acaban de llegar
-# Podrías saludar a nuestros invitados Mari
+    "1"])
 
 trainer.train(['mary buenos días',
                '22'])
@@ -93,17 +83,6 @@ trainer.train(['mari saludar a los invitados',
 
 trainer.train(["mary háblame de los proyectos de audacia",
                '16'])
-
-# Mary podrías proporcionar información sobre los proyectos en los que estás trabajando
-# Qué proyectos estás llevando a cabo en este momento, Mary
-# Mary podrías darme una visión general de los proyectos en los que estás involucrada
-# Cuáles son los proyectos más destacados en los que estás trabajando, Mary
-# Mary podrías compartir algunos detalles sobre los proyectos en los que has estado trabajando recientemente
-# Podrías hablar un poco sobre los proyectos actuales, Mary
-# Mary qué tipo de proyectos estás gestionando en este momento
-# Cuál es el enfoque principal de tus proyectos actuales, Mary
-# Mary puedes darme un resumen de los proyectos en los que estás implicada
-# Qué avances has logrado en tus proyectos más recientes, Mary
 
 trainer.train(["mari háblame de los proyectos de audacia",
                '16'])
@@ -332,9 +311,6 @@ trainer.train(['mary qué puedes decirme sobre Biotecnia',
 trainer.train(['mari qué puedes decirme sobre Biotecnia',
               '12' ])
 
-# trainer.train(["Qué es Patria",
-#     "20"])
-
 trainer.train(['mary dime que es patri',
                 '19'])#sí
 
@@ -352,9 +328,6 @@ trainer.train(['Mary qué es patri',
 
 trainer.train(['Mari qué es patri',
            '19'])
-
-# trainer.train(['dime qué es patri',
-#                '5'])#sí
 
 trainer.train(["mari hablame de patri", 
                 "19"]) #Patrii es una IA que detecta glaucoma en segundos al analizar campos visuales. Su software autónomo es un valioso recurso para oftalmólogos, identificando anomalías y glaucoma en 20 segundos, además de ser uno de los primero software patentados en Colombia
@@ -421,8 +394,6 @@ def imprimir_saludo():
     rage = ["02:00 PM"]
     
 
-
-
     # Si los minutos son 0 o 30, imprime "¡Hola!"
     if HNow in hora_clima and MNow in minuto_clima:
 
@@ -445,9 +416,6 @@ def imprimir_saludo():
         clima.speak("Son las 10 de la mañana")
     if hora_actual in rage and MHow in minnuto_clima: #2:00 pm
         clima.speak("Es hora de regresar a las actividades diarias")
-    
-    
-    
     
     
 def beamforming(stream, mic_positions):
@@ -613,14 +581,6 @@ def main():
         imprimir_saludo()
 
         rec_json = listen()
-
-        # time_runs = threading.Event()
-        # time_runns.set()
-        # t = threading.Thread(target=timer, args=(timer_runs,))
-        # t.start()
-
-        # time.sleep(10)
-        # time_runs.clear()
 
         rec = rec_json['text']
         status = rec_json['status']
